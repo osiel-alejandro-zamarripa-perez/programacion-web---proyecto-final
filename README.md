@@ -2,7 +2,7 @@
 
 Aplicación web Full-Stack desarrollada como proyecto final de Programación Web. Integra un frontend responsivo y accesible con un servidor backend en **Node.js** y **Express** para la carga dinámica de proyectos y el procesamiento del formulario de contacto mediante una API REST.
 
-## Enlace en vivo (Despliegue)
+## Link de render
 * **Demo desplegada en Render:** `https://programacion-web-proyecto-final.onrender.com`
 
 ## Tecnologías Utilizadas
