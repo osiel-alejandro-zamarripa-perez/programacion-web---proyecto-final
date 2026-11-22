@@ -5,10 +5,6 @@ Aplicación web Full-Stack desarrollada como proyecto final de Programación Web
 ## Link de render
 * **Demo desplegada en Render:** `https://programacion-web-proyecto-final.onrender.com`
 
-## Tecnologías Utilizadas
-* **Frontend:** HTML5 semántico, CSS3 (Grid, Flexbox, Variables CSS y Modo Oscuro persistente con `localStorage`), JavaScript Vanilla (`Fetch API` y validación de formularios).
-* **Backend:** Node.js, Express (`express.static` y endpoints REST).
-
 ## Estructura del Proyecto
 ```text
 ├── Proyecto final/          # Archivos estáticos del cliente (Frontend)
