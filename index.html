@@ -1,0 +1,239 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portafolio profesional y currículum digital de Osiel Alejandro Zamarripa Pérez.">
+        <title>Osiel Zamarripa | Portafolio Profesional</title>
+        <!-- enlace a la hoja de estilos css -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- encabezado y navegacion -->
+        <header id="inicio">
+            <div class="contenedor header-contenido">
+                <div class="header-superior">
+                    <div>
+                        <h1>Osiel Alejandro Zamarripa Pérez</h1>
+                        <p class="subtitulo">Estudiante de Ingeniería en Electrónica y Computación | Diseño Digital y Desarrollo Web</p>
+                    </div>
+
+                    <!-- botones de control: tema y menu hamburguesa -->
+                    <div class="controles-header">
+                        <button id="btn-tema" class="btn-control" aria-label="Cambiar tema de color">Modo Oscuro</button>
+                        <button id="btn-menu" class="btn-control btn-hamburguesa" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+                    </div>
+                </div>
+
+                <nav id="nav-principal" aria-label="Navegación principal">
+                    <!-- lista desordenada para la barra de navegacion -->
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#educacion">Educación</a></li>
+                        <li><a href="#habilidades">Tecnologías</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- contenido principal -->
+        <main class="contenedor">
+
+            <!-- seccion sobre mi -->
+            <section id="sobre-mi" class="seccion-bloque perfil-flex">
+                <!-- foto de perfil optimizada con ruta relativa -->
+                <img src="imagenes\cred.jpg" alt="Foto de perfil" width="200" height="200" class="foto-perfil">
+                
+                <div class="perfil-texto">
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Soy estudiante universitario en Ciudad Juárez, Chihuahua, apasionado por el diseño de circuitos integrados digitales y analógicos, sistemas embebidos y desarrollo de software. Busco integrar soluciones eficientes tanto a nivel de hardware como en aplicaciones web.
+                    </p>
+                    <!-- enlaces absolutos a redes profesionales -->
+                    <p class="enlaces-sociales">
+                        Encuéntrame en: 
+                        <a href="https://github.com/osiel-alejandro-zamarripa-perez" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- seccion historial educativo -->
+            <section id="educacion" class="seccion-bloque">
+                <h2>Historial Educativo</h2>
+                <!-- lista ordenada para cronologia educativa -->
+                <ol class="lista-educacion">
+                    <li>
+                        <strong>Universidad Autónoma de Ciudad Juárez (UACJ)</strong> — Ingeniería (En curso)
+                        <p>Enfoque en diseño lógico en FPGA, microelectrónica, tecnologías web e IOT</p>
+                    </li>
+                    <li>
+                        <strong>Centro de Bachillerato Tecnológico industrial y de servicios No. 128 </strong> — Bachillerato Tecnológico (2019 - 2022)
+                        <p>Formación técnica en programación.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- seccion de habilidades -->
+            <section id="habilidades" class="seccion-bloque">
+                <h2>Tecnologías Dominadas</h2>
+                <!-- lista de definicion para terminos tecnicos -->
+                <dl class="lista-definicion">
+                    <div class="termino-item">
+                        <dt>Diseño Digital y FPGA</dt>
+                        <dd>Verilog HDL, Xilinx Vivado, implementación en tarjetas Digilent Basys 3, simulación con Icarus Verilog y Cocotb.</dd>
+                    </div>
+                    <div class="termino-item">
+                        <dt>Diseño de Circuitos Integrados (VLSI)</dt>
+                        <dd>Flujo Tiny Tapeout, esquemáticos en Xschem, layout físico en Magic y Sky130 PDK.</dd>
+                    </div>
+                    <div class="termino-item">
+                        <dt>Instrumentación y Embebidos</dt>
+                        <dd>Microcontroladores ATmega328P (Arduino), adquisición de datos seriales y LabVIEW VISA.</dd>
+                    </div>
+                    <div class="termino-item">
+                        <dt>Desarrollo Web y Machine Learning</dt>
+                        <dd>HTML5 semántico, CSS3, Node.js, Passport.js, Python con TensorFlow, Keras y PyTorch.</dd>
+                    </div>
+                </dl>
+            </section>
+
+           <!-- seccion de proyectos -->
+        <section id="proyectos" class="seccion-bloque">
+            <h2>Proyectos Destacados</h2>
+
+            <!-- contenedor grid para las tarjetas de proyectos -->
+            <div class="proyectos-grid">
+                
+                <!-- tarjeta 1 -->
+                <article class="tarjeta-proyecto">
+                    <img src="imagenes\Vga.jpeg" alt="Vista previa del diseño ASIC VGA y motores" class="proyecto-imagen">
+                    
+                    <div class="proyecto-cuerpo">
+                        <h3>ASIC de Control VGA y Motores (Tiny Tapeout)</h3>
+                        <span class="proyecto-categoria">Diseño Digital y VLSI</span>
+                        <p>
+                            Diseño RTL en Verilog que integra generación de sincronización VGA y control de dirección para motores, verificado mediante pruebas automatizadas en Cocotb y análisis de ondas en Surfer.
+                        </p>
+                    </div>
+
+                    <ul class="proyecto-tags">
+                        <li>Verilog</li>
+                        <li>Cocotb</li>
+                        <li>Tiny Tapeout</li>
+                    </ul>
+                </article>
+
+                <!-- tarjeta 2 -->
+                <article class="tarjeta-proyecto">
+                    <img src="imagenes\redconvolucional.png" alt="Vista previa de mejora de imágenes con redes neuronales" class="proyecto-imagen">
+                    
+                    <div class="proyecto-cuerpo">
+                        <h3>Mejora de Imágenes mediante Redes Neuronales Convolucionales (CNN)</h3>
+                        <span class="proyecto-categoria">Machine Learning y deep Learning</span>
+                        <p>
+                            Entrenamiento y evaluación de un modelo de aprendizaje profundo en TensorFlow/Keras para restauración de imágenes, optimizando métricas PSNR y SSIM.
+                        </p>
+                    </div>
+
+                    <ul class="proyecto-tags">
+                        <li>Python</li>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                    </ul>
+                </article>
+
+                <!-- tarjeta 3 -->
+                <article class="tarjeta-proyecto">
+                    <img src="imagenes\sensor.jpeg" alt="Vista previa del sistema de instrumentación de temperatura" class="proyecto-imagen">
+                    
+                    <div class="proyecto-cuerpo">
+                        <h3>Sistema de Instrumentación y Calibración de Temperatura</h3>
+                        <span class="proyecto-categoria">Instrumentación Electrónica</span>
+                        <p>
+                            Acondicionamiento de señal mediante puente de Wheatstone y amplificador de instrumentación para sensor RTD TD5A, con interfaz de lectura en LabVIEW.
+                        </p>
+                    </div>
+
+                    <ul class="proyecto-tags">
+                        <li>LabVIEW</li>
+                        <li>Arduino</li>
+                        <li>Sensores RTD</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+            <!-- seccion contacto con datos directos y formulario -->
+            <section id="contacto" class="seccion-bloque">
+                <h2>Contacto</h2>
+                <p>Si deseas colaborar en un proyecto o tienes alguna consulta, puedes comunicarte directamente o enviarme un mensaje:</p>
+
+                <div class="contacto-grid">
+                    <!-- bloque de informacion directa -->
+                    <div class="info-contacto">
+                        <h3>Información Directa</h3>
+                        <ul>
+                            <li>
+                                <strong>Correo electrónico:</strong><br>
+                                <a href="mailto:al226628@alumnos.uacj.mx">al226628@alumnos.uacj.mx</a>
+                            </li>
+                            <li>
+                                <strong>Teléfono:</strong><br>
+                                <a href="tel:+526568574220">+52 656 857-4220</a>
+                            </li>
+                            <li>
+                                <strong>Ubicación:</strong><br>
+                                <span>Ciudad Juárez, Chihuahua, México</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- formulario de contacto validado por js -->
+                    <form id="form-contacto" action="#" method="post" class="formulario-contacto" novalidate>
+                        <div class="campo-grupo">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana López">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Motivo de contacto">
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <!-- contenedor para mensajes de error o exito en el dom -->
+                        <div id="mensaje-formulario" class="alerta-formulario" role="alert" aria-live="polite"></div>
+
+                        <button type="submit" class="btn-primario">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- pie de pagina -->
+        <footer>
+            <div class="contenedor">
+                <p>&copy; 2026 Osiel Alejandro Zamarripa Pérez. Todos los derechos reservados.</p>
+                <p><a href="#inicio">Volver arriba</a></p>
+            </div>
+        </footer>
+
+        <!-- enlace al archivo javascript -->
+        <script src="script.js"></script>
+    </body>
+    </html>
