@@ -183,8 +183,12 @@ h2 {
 }
 
 .foto-perfil {
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: var(--radio-borde);
     object-fit: cover;
+    object-position: top;
     border: 3px solid var(--color-primario);
 }
 
